@@ -19,10 +19,10 @@ A build-your-own URL shortener for a domain.
 6. Insert one entry into that table with the password you would like to set
 7. Copy the files in the URLShortener folder into the root of your domain
 8. Edit the connect.php, edit.php and index.php files personalising them with your details
-9. Create a file called .htaccess with the following code (This removes the need for ?c= after the domain):
-  **RewriteEngine On
-  RewriteCond %{REQUEST_FILENAME} !-f
-  RewriteCond %{REQUEST_FILENAME} !-d
+9. Create a file called .htaccess with the following code (This removes the need for ?c= after the domain):  
+  **RewriteEngine On  
+  RewriteCond %{REQUEST_FILENAME} !-f  
+  RewriteCond %{REQUEST_FILENAME} !-d  
   RewriteRule ^(.*)$ index.php?c=$1 [QSA,L]**
 11. Visit YourDomain/codes.php to login and create a url link
 12. Goto YourDomain/aCode to get redirected to the set URL
