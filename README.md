@@ -10,10 +10,10 @@ A build-your-own URL shortener for a domain.
 1. Create a MySQL Database called what you want. I.E. URLShortener
 2. Create a login that has select, insert, update and delete access to said database
 3. Create a table in the database called links
-4. Create 3 columns in the table:
-  a. linkID int(6) primary AutoIncrement,
-  b. linkCode varchar(10),
-  c. linkDestination varchar(200)
+4. Create 3 columns in the table:  
+  a. linkID int(6) primary AutoIncrement,  
+  b. linkCode varchar(10),  
+  c. linkDestination varchar(200)  
 ![alt text](https://github.com/TheMaster870/URL-Link-Shortener/blob/main/images/sqlcolumns.PNG?raw=true)
   
 5. Create a table called password with one columns called password as varchar(20)
